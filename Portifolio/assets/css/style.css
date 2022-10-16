@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+header .logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #1b1b1b;
+}
+header .menu {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+header .menu-line {
+    height: 3px;
+    background-color: #333;
+}
+
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+.container .leftside {
+    flex: 1;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+}
+.container .rightside {
+    flex: 1;
+    background-color: #156370;
+    background-image: url(../images/ftadriel.png);
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+.container .info .profession {
+    color: #156370;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 22px;
+}
+
+.container .info .name {
+    font-weight: bold;
+    font-size: 65px;
+    color: #1b1b1b;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.container .info .buttons a {
+    display: inline-block;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    color: #156370;
+    padding: 20px 40px;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 0px 0px 10px #333;
+    border-radius: 5px;
+}
+.container .info .buttons a.light {
+    background-color: #156370;
+    color: #fff;
+}
+.container .info .buttons a:hover {
+    opacity: 0.8;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 40px;
+    font-size: 15px;
+    color: #333;
+}
+
+footer a {
+    color: #333;
+}
+
+@media (max-width: 850px) {
+
+    header {
+        position: initial;
+        background-color: #f0f0f0;
+    }    
+
+
+    .container {
+        flex-direction: column;
+        height: calc(100vh - 66px);
+    }
+    .container .leftside {
+        flex: none;
+        padding: 30px 20px;
+        justify-content: center;
+        text-align: center;
+    }
+
+
+    footer {
+        position: initial;
+        color:#999;
+        background-color: #333;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    footer a {
+        color:#999;
+    }
+
+}
+
+@media (max-width: 450px) {
+
+    .container .leftside .info .name {
+        font-size: 50px;
+    }
+    .container .leftside .info .buttons a{
+        display: block;
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+
+    footer {
+        font-size: 13px;
+    }
+}

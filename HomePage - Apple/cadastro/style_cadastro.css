@@ -1,0 +1,153 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    margin:50px;
+    padding:0;
+    display: flex;
+}
+
+.container .container_image {
+    width: fit-content;
+    padding: 0;
+    margin-top: 70px;
+    margin-left: 0px;
+}
+
+.container img {
+    width: 400px;
+}
+
+.container_text {
+    margin: 0px 0px 50px 40px;
+}
+
+.container_text h1 {
+    margin: 0;
+    font-size: 60px;
+}
+
+.container_text h3 {
+    margin: 0;
+    font-size: 25px;
+
+}
+
+.container_text h1,
+.container_text h3 {
+    font-weight: bolder;
+    text-shadow: #333 2px 2px;
+}
+
+#geral {
+    display: flex;
+}
+
+.formulary {
+    margin-left: 150px;
+    margin-top: 30px;
+    width: 400px;
+    height: 500px;
+    background-color: #000;
+    border: solid #000 1px;
+    border-radius: 10px;
+    box-shadow: #555 6px 6px;
+    font-weight: bolder;
+    color: #fff;
+}
+
+.layout_logo {
+    display: flex;
+    justify-content: center;
+}
+
+.layout_logo img{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    width: 30px;
+}
+
+.formulary_title {
+    padding-bottom: 20px;
+    border-bottom: 3px solid #fff;
+}
+
+form {
+    padding: 10px 10px 10px 20px;
+    margin-bottom: 100px;
+}
+
+.input_email {
+    width: 358px;
+}
+
+.input_DDD{
+    width: 38px;
+    margin-right: 10px;
+}
+
+.input_tel {
+    width:252px;
+}
+
+.input_cod_tel {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.formulary_senha {
+    margin-top: 20px;
+    box-align: center;
+}
+
+.formulary_senha h4 {
+    border: solid 1px #fff;
+    border-radius: 9px;
+    background-color: #fff;
+    color: #000;
+    font-size: 17px;
+    font-weight: bolder;
+    text-align: center;
+    text-shadow: #777 1px 1px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+}
+
+.input_senha {
+    width: 358px;
+}
+
+.input_enviar {
+    font-size: 15px;
+    font-weight: bolder;
+    width: 358px;
+    background-color: #000;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.input_enviar:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+@media only screen and (max-width:375px){
+
+    body {
+        margin: 0;
+        padding: 0;
+        display: block;
+    }
+
+    .formulary {
+        margin: 0;
+    }
+
+    .container_text h1{
+        font-size: 50px;
+    }
+} 

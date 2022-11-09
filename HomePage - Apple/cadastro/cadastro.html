@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width,user-scalable=0"/>
+            <title>CADASTRO | APPLE</title>
+            <link rel="stylesheet" href="style_cadastro.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+        </head>
+        <body >
+           <div class="container">
+                <div class="container_image">
+                    <a href="..//projeto.html" target="_blank"><img src="imagens/apple.logo.black.png" alt=""></a>
+                </div>
+                <div class="container_text">
+                    <h1>Cadastre-se já</h1>
+                    <h3>Receba as novidades em PRIMEIRA MÃO</h3>
+                </div>
+           </div>
+           <section id="geral">
+                <div class="formulary">
+                    <div class="layout_logo">
+                        <img src="imagens/apple_logo.jpg" alt="">
+                    </div>
+                    <form action="cadastro.html" method="POST">
+                        <div class="formulary_title">
+                            <label>Nome Completo <br>
+                                <input type="text" name="First_name" value="" required minlength="3" maxlength="100"
+                                placeholder="Primeiro Nome">
+
+                                <input type="text" name="Last_name" value="" required minlength="3" maxlength="100"
+                                placeholder="Sobrenome">
+                            </label>
+                            <br>
+                            <br>
+                            <label>E-mail
+                                <input class="input_email" type="email" name="Email" value="" required
+                                placeholder="exemplo@email.com">
+                            </label>
+                            <br>
+                            <br>
+                            <label>Telefone <br>
+                                <input class="input_cod_tel" type="tel" name="codigo_telefone" value="+55">
+                                <input class="input_DDD" type="tel" name="DDD" value="" required placeholder="DDD">
+                                <input class="input_tel" type="tel" name="Telefone" value="" required placeholder="00000-0000">
+                            </label>
+                        </div>
+
+                        <div class="formulary_senha">
+                            <h4>Crie sua senha</h4>
+
+                            <label>Senha
+                                <input class="input_senha" type="password" name="Senha" value="" required>
+                            </label>
+                            <br>
+                            <br>
+                            <label>Confirme sua senha
+                                <input class="input_senha" type="password" name="Senha" value="" required>
+                            </label>
+                            <br>
+                            <br>
+                            <label>
+                                   <input class="input_enviar" type="submit" name="Enviar" value="Enviar" required>
+                            </label>
+                        </div>
+                    </form>
+                </div>
+           </section>
+        </body>
+    </html>

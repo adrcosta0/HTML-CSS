@@ -1,12 +1,12 @@
 *{
     box-sizing: border-box;
+    font-family: 'Titillium Web', sans-serif;
 }
 
 body {
     margin: 0;
     padding: 0;
-    background-color: #000;
-    font-family: 'Rubik', sans-serif;
+    background: linear-gradient(120deg, #202020, #000);
     color:#fff;
 }
 
@@ -57,7 +57,6 @@ header {
     padding: 10px;
     color: #fff;
     transition: .5s;
-    border-radius: 5px;
 }
 
 div .active a {
@@ -80,10 +79,12 @@ div .active a,
 
 #banner .banner_img {
     display: flex;
-    background-image: url('../imagens/banner.apple.jpg');
+    background-image: url('../imagens/zyro-image.png');
     background-position:center;
+    background-position-y: 60px ;
     background-attachment: fixed;
-    background-size:contain;
+    background-size:70%;
+    background-repeat:repeat-x;
     height: 500px;
     width: 100%;
 }
@@ -93,7 +94,12 @@ div .active a,
     display:flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 250px;
+    margin-left: 180px;
+    transition: .4s;
+}
+
+.banner_title:hover{
+    transform: scale(1.03);   
 }
 
 .banner_title h1,
@@ -101,32 +107,33 @@ div .active a,
     color:#000;  
     font-weight: bolder;
     padding-left: 100px;
+    user-select: none;
 }
 
 .banner_title h1 {
     font-size: 70px;
     margin: 0;
-    text-shadow: 4px 4px 0px #777;
+    text-shadow: 0px 0px 5px #fff, 0px 0px 2px #fff;
 }
+
+
 
 .banner_title a {
     text-decoration: none;
-    color:#000
-}
-
-.banner_title a:hover {
-    color:#333;
+    color:#000;
+    transition: .4s;
 }
 
 .banner_title h3 {
     font-size: 30px;
     margin: 0;
-    text-shadow: 2px 2px 0px #555;
+    text-shadow: 0px 0px 2px #fff, 0px 0px 2px #fff;
 }
 
 #geral{
     display:flex;
     justify-content: center;
+    user-select: none;
 }
 
 
@@ -190,13 +197,23 @@ article .produts_thumb:hover{
 .novidade {
     width: 100%;
     height: 500px;
-    border-top: #fff 3px solid;
+    margin-top: 100px;
     text-align: center;
+}
+
+.novidade h1{
+    border-bottom: 2px solid #fff;
+    margin-left: 10px;
+    margin-right: 10px;
+    width:990px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 70px;
 }
 
 
 .novidade_video video {
-    border: double 5px #fff;
+    border: none;
     width: 500px;
     height: 300px;
 }
@@ -209,6 +226,7 @@ footer {
     background-color: #313131;
     margin: 0;
     padding: 0;
+    user-select: none;
 }
 
 .footer_inf {
